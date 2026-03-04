@@ -1,0 +1,74 @@
+/* Add CSS styles for your web site here and use them in index.html. */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f7f6;
+    padding: 40px;
+    color: #333;
+}
+
+h1 {
+    color: #003366; /* United Way Navy Blue */
+}
+
+#calculator {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    max-width: 400px;
+}
+
+input {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#analyze {
+    background-color: #003366;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#analyze:hover {
+    background-color: #002244;
+}
+
+/* "Media Query" */
+@media print {
+    #calculator, #faq-box, button {
+        display: none;
+    }
+    #results {
+        display: block;
+        border: none;
+    }
+}
+
+#faq-box {
+    margin-top: 30px;
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    max-width: 400px; /* Keeps it the same width as your calculator */
+}
+
+#source-meta {
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+}
+
+#impact-paragraph {
+    font-size: 0.8rem; 
+    color: #666; 
+    line-height: 1.4;
+}

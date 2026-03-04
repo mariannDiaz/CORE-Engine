@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>CORE Financial Stability Model</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+
+    <body>
+        <!-- Add HTML markup elements for your web site below -->
+        <div id="calculator">
+            <h1>Mariann Diaz</h1>
+            <h2> CORE Dashboard</h2>
+
+            <p>
+                Enter your financial data to see
+                your Snohomish County Stability Analysis.
+            </p>
+
+            <input type="number" id="income" placeholder="Monthly Income ($)">
+            <input type="number" id="rent" placeholder="Monthly Rent ($)">
+            <input type="number" id="refund" placeholder="Expected Tax Refund ($)">
+            
+            <button id="analyze" onclick="calculateStability()">Analyze Impact</button>
+            
+            <div id="results">
+                </div>
+        </div>
+
+        <div id="faq-box">
+            <h2 style="color: #003366;">Understanding Your Impact</h2>
+            
+            <details>
+                <summary>What is a VITA Tax Refund?</summary>
+                <p>VITA is a free IRS program helping families keep their full refund by avoiding high tax prep fees.</p>
+            </details>
+
+            <details>
+                <summary>What is CORE?</summary>
+                <p>CORE is a data-driven model used in Snohomish County to help families move from crisis to long-term stability.</p>
+            </details>
+
+            <details>
+                <summary>Why calculate this?</summary>
+                <p>We show how a one-time refund bridges the "Self-Sufficiency Gap" for essential costs like rent in our community.</p>
+            </details>
+
+            <div id="source-meta">
+                <p id="impact-paragraph" >
+                    <strong>Data Methodology:</strong> The $120,000 annual benchmark ($10,000/mo) is based on the 
+                    <em>Self-Sufficiency Standard for Washington State (Snohomish County)</em> for a 
+                    family with two adults and two school-aged children. 
+                    <br>
+                    <a href="https://selfsufficiencystandard.org/washington/" target="_blank">
+                        View UW Data Source →
+                    </a>
+                </p>
+            </div>
+
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
